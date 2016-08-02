@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position 实现 混合自适应固定宽的三列布局</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			height: 500px;
+			color:#fff;
+		}
+		.main{
+			position: relative;
+			/*min-width 是保证中间自适应不被挤掉的关键属性*/
+			min-width: 600px;
+		}
+		.left{
+			background-color: red;
+			width: 200px;
+			position: absolute;
+			left: 0;
+			/*top:0;*/
+		}
+		.right{
+			background-color: green;
+			width: 300px;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.middle{
+			background-color: blue;
+			margin: 0 300px 0 200px;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- 三列布局 左200 右 300 中间自适应 -->
+	<div class="main">
+		<div class="left">left:200px</div>
+		<div class="middle">middle:auto</div>
+		<div class="right">right:300px</div>
+	</div>
+</body>
+</html>

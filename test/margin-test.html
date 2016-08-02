@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Margin test</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			background-color: #c0c0c0
+		}
+		div{
+			font-size:15px;
+			text-align: center;
+		}
+		.wrap{
+			background-color: rgba(0,255,0,0.6);
+			margin:0 50px 50px 50px;
+
+			border:4px solid rgba(0,255,0,0.6);
+			color: black;
+		}
+		.box1{
+			border:4px solid red;
+			background-color: rgba(255,0,0,0.6);
+		}
+		.box2{
+			border:4px solid blue;
+			background-color: rgba(0,0,255,0.6);;
+		}
+		p{
+			margin-bottom: 10px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	
+	<div>
+		<p>margin normal</p>
+		<div class="wrap">
+			wrap
+			<div class="box1" >box1</div>
+			<div class="box2" >box2</div>
+		</div>
+	</div>
+	<div>
+		<p>margin bottom -25px 相当于将box1的b框 向上位移25px 显示为box2上移到box1的t框位置 重叠显示</p>
+		<div class="wrap">
+			wrap
+			<div class="box1" style="margin: 0 0 -25px 0 ;">box1</div>
+			<div class="box2" >box2</div>
+		</div>
+	</div>
+	<div>
+		<p>margin top -25px 相当于将box1的t框 向上位移25px 显示为box1 t框上移25px 后续文档流跟随位移 </p>
+		<div class="wrap">
+			wrap
+			<div class="box1" style="margin: -25px 0 0 0 ;">box1</div>
+			<div class="box2" >box2</div>
+		</div>
+	</div>
+	<div>
+		<p>margin top bottom -25px 相当于将box1的t框与b框同时向上位移25px 显示为 box2与box1重叠 并跟随位移25px</p>
+		<div class="wrap">
+			wrap
+			<div class="box1" style="margin: -25px 0 -25px 0 ;">box1</div>
+			<div class="box2" >box2</div>
+		</div>
+	</div>
+	<div>
+		<p>margin left right -25px  box1 总体width不变  marging 负值 需要 content 补足 显示为box1 width 左右各扩展25px</p>
+		<div class="wrap">
+			wrap
+			<div class="box1" style="margin: 0 -25px;">box1</div>
+			<div class="box2" >box2</div>
+		</div>
+	</div>
+	<div>
+		<p>
+			margin-b 负值 与pading-b 正值抵消 使得box模型在文档流中的位置保持不变，相对于父元素height也就不变 配合overflow 以这个高度进行裁切 看起来就有两个以Box1 height 的div
+		</p>
+		<div class="wrap" style="overflow: hidden;width:768px">
+			
+			<div class="box1" style="height:50px;margin:0 0 -100px 0;padding:0 0 100px 0; float:left;width:48.8%">box1</div>
+			<div class="box2" style="height:30px;margin:0 0 -100px 0;padding:0 0 100px 0; float:left;width:48.8%">box2</div>
+		</div>
+	</div>
+</body>
+</html>

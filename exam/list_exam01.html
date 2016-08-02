@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>list exma01</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			/*font-family: "YaHei Consolas Hybrid";*/
+		}
+		.list-contain{
+			width: 342px;
+			font-size: 12px;
+			border:1px solid #ccc;
+			border-radius: 8px;
+			background-color: #fff;
+			padding-bottom: 10px;
+			position: relative;
+			/*以下是用于让head部分更明显而设置的临时代码*/
+			margin: 50px;
+		}
+		/*图片head版本*/
+		.list-head-1{
+			height: 30px;
+			background-image: url(../image/new_head.jpg);
+			background-repeat:repeat-x ;
+			background-position: -10px;
+		}
+		.list-head-2{
+			height: 30px;
+			background-color: blue;
+		}
+
+		.list-title{
+			padding:7px 10px;
+			color: #fff;
+			font-size: 16px;
+		}
+		.list-main{
+			margin-top: 5px;
+			margin-right: 10px;
+
+		}
+		li.li-title{
+			margin-top: 1em;
+		}
+		li.li-title:hover{
+			background-color: rgb(162, 219, 247);	
+		}
+		span.title{
+			border-bottom: 1px dotted #ccc;
+			padding-bottom: 2px;
+
+		}
+		span.time{
+			float:right;
+			color:gray;	
+		}
+		a.a-title{
+			color: #000;
+			text-decoration: none;
+			white-space: nowrap;
+			display: inline-block;
+			width: 240px;
+			text-overflow:ellipsis;
+			overflow: hidden;
+		}
+		div.more{
+			position: absolute;
+			top:8px;
+			right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="list-contain">
+		<div class="list-head-1">
+			<h4 class="list-title"><!-- 综合新闻 --></h4>
+		</div>
+		<div class="list-main">
+			<!-- 默认ul 样式 padding-left 40px -->
+			<ul style="padding-left:25px;">
+				<li class="li-title">
+					<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+					<span class="time">2016/07/28</span>
+				</li>	
+				<li class="li-title">
+					<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+					<span class="time">2016/07/28</span>
+				</li><li class="li-title">
+				<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+				<span class="time">2016/07/28</span>
+			</li><li class="li-title">
+			<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+			<span class="time">2016/07/28</span>
+		</li><li class="li-title">
+		<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+		<span class="time">2016/07/28</span>
+	</li><li class="li-title">
+	<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+	<span class="time">2016/07/28</span>
+</li>
+</ul>
+</div>
+<div class="more"><a href="#"><img src="../image/more.jpg" alt="更多"></a></div>
+</div>
+
+<div class="list-contain">
+	<div class="list-head-2">
+		<h4 class="list-title">综合新闻</h4>
+	</div>
+	<div class="list-main">
+		<!-- 默认ul 样式 padding-left 40px -->
+		<ul style="padding-left:25px;">
+			<li class="li-title">
+				<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+				<span class="time">2016/07/28</span>
+			</li>	
+			<li class="li-title">
+				<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+				<span class="time">2016/07/28</span>
+			</li><li class="li-title">
+			<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+			<span class="time">2016/07/28</span>
+		</li><li class="li-title">
+		<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+		<span class="time">2016/07/28</span>
+	</li><li class="li-title">
+	<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+	<span class="time">2016/07/28</span>
+</li><li class="li-title">
+<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”</a></span>
+<span class="time">2016/07/28</span>
+</li>
+<li class="li-title">
+	<span class="title"><a href="#" class="a-title">我院全体干警深入基层与困难群众结“穷亲”123</a></span>
+	<span class="time">2016/07/28</span></li>
+</ul>
+</div>
+<div class="more"><a href="#"><img src="../image/more.jpg" alt="更多"></a></div>
+</div>
+<h5>尚未解决的问题:<br>
+	1.head部分的背景颜色块是直角矩形的 把contain 压住了 用什么方法解决?<br>
+	2.如果标题文字过多 超过长度时，如何强制隐藏标题内容? 如上图所示<br>
+</h5>
+<h5>
+	<pre>
+	{
+		white-space: nowrap;
+		display: inline-block;
+		width: 240px;
+		text-overflow:ellipsis;
+		overflow: hidden;
+	}
+	</pre>
+</h5>
+</body>
+</html>

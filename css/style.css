@@ -1,0 +1,10 @@
+div.box
+{
+	font-size: 14px;
+	width: 300px;
+	border:1px dotted gray;
+	background-color: #eee;
+	padding:7px;
+	margin-top: 10px;
+}
+

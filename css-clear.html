@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css-clear</title>
+	<!-- <link rel=stylesheet href="css/style.css"> -->
+	<style type="text/css">
+		.box{
+			background-color: gray;
+			border: 1px dotted 	#eee;
+			width: 50px;
+			height:50px;
+			text-align: center;
+		}
+		#box1{
+			float:left;
+		}
+		#box2{
+			float:right;
+		}
+		#box3{
+			clear: both;
+		}
+	</style>
+</head>
+<body>	
+	<div class="box" id="box1">1</div>
+	<div class="box" id="box2">2</div>
+	<!-- clear：both 清除受到float影响的后一个元素  -->
+	<div class="box" id="box3">3</div>
+
+</body>
+</html>

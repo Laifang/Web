@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float test</title>
+	<!-- <link rel=stylesheet href="css/style.css"> -->
+	<!-- 用于测试在不设置position属性的前提下，设置top right bottom left 属性 是否能够生效 -->
+	<style type="text/css">
+		*{margin: 0;}
+		.box{
+			background-color: gray;
+			border: 1px dotted 	#eee;
+			width: 50px;
+			height:50px;
+			text-align: center;
+		}
+
+		#box1{
+			/*浮动左 但是离右边0*/
+			/*position: absolute;*/
+			float:left;
+			right:0;
+			/*实践证明:不设置Position属性，该属性不能生效;而且会导致float属性失效*/
+		}
+		#box2{
+			float:right;
+		}
+		/*#box3{
+			clear: both;
+		}*/
+	</style>
+</head>
+<body>	
+	<div class="box" id="box1">box1</div>
+	<div class="box" id="box2">2</div>
+	<!-- <div class="box" id="box3">3</div> -->
+	<p>实践证明:不设置Position属性，该属性不能生效;而且会导致float属性失效</p>
+</div>
+</body>
+</html>

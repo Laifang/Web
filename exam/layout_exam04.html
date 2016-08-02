@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>layout exam04</title>
+	<style type="text/css">
+		h4{
+			text-align: center;
+		}
+		.demo01_wrap{	
+			width: 768px;
+			background:#00c;
+			margin: 0 auto;
+			text-align: center;
+			color: #fff;
+		}
+		.demo01_main{
+			margin: 0 25% -18px 0;
+			background: #f00;
+			/*float: left;*/
+		}
+		.demo01_right{
+			width: 25%;
+			background: #0f0;
+			float: right;
+		}
+
+		.demo02_wrap{
+			width: 768px;
+			background:#00c;
+			margin: 0 auto;
+			text-align: center;
+			color: #fff;
+			position: relative;
+		}
+		.demo02_main{
+			
+			background: #f00;
+			margin-right: 25%;
+		}
+		.demo02_right{
+			width: 25%;
+			background: #0f0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.demo03_wrap{
+			min-width: 600px;
+			background:#ccc;
+			margin: 0 50px;
+			padding: 20px;
+			text-align: center;
+			color: #000;
+			overflow: hidden;
+
+		}
+		.demo03_main{
+			background: #f00;
+			/*float: left;*/
+			margin-left: 32%;
+			margin-right: 22%;
+		}
+		.demo03_left{
+			width: 30%;
+			background: #0f0;
+			float: left;
+			margin-left: -100%;
+		}
+		.demo03_right{
+			width: 20%;
+			background: #0f0;
+			float: right;
+			margin-left: -100%;
+		}
+		.demo03_main_wrap{
+			float:left;
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+	<h4>float margin 实现固定+自适应两列布局</h4>
+	<div class="demo01_wrap">
+		<div class="demo01_main">main:auto</div>
+		<div class="demo01_right">right:25%</div>
+	</div>
+	<br>
+	<h4>position margin 实现固定+自适应两列布局</h4>
+	<div class="demo02_wrap">
+		<div class="demo02_main">main:auto</div>
+		<div class="demo02_right">right:25%</div>
+	</div>
+
+	<h4 style="text-align: center;">margin float 实现固定+自适应两列布局 注意 只有在元素内容过多导致 三个float 在一行放不下时 才能用margin -100%</h4>
+	<h4>这个限制已经解决了：设置一个widt:100%的div 包裹main 既可以实现独占一行  而不需要 内容上的限制</h4>
+	<div class="demo03_wrap">
+		<div class="demo03_main_wrap">
+			<div class="demo03_main">main:auto</div>
+		</div>
+		<div class="demo03_left"><h4>left<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum quidem magnam aliquam distinctio iusto id ab laboriosam quasi! Eius illum tempore ut officiis ratione nihil atque amet vel ullam!</p></h4></div>
+		<div class="demo03_right"><h4>right<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsum quidem magnam aliquam distinctio iusto id ab laboriosam quasi! Eius illum tempore ut officiis ratione nihil atque amet vel ullam!</p></h4></div>
+	</div>
+</body>
+</html>

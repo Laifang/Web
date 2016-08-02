@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>margin test02 多列等高布局</title>
+	<style type="text/css">
+		*{
+			margin:0;
+		}
+		.container{
+			margin: 50px 0 0 50px ;
+			width:768px;
+			overflow: hidden;
+			color: #FFF;
+		}
+		.left{
+			height: 50px;
+			width: 33.33%;
+			margin-bottom: -100px;
+			padding-bottom: 100px;
+			background-color: green;
+			float:left;
+		}
+		.main{
+			height: 100px;
+			width: 33.33%;
+			margin-bottom: -100px;
+			padding-bottom: 100px;
+			background-color: red;
+			float:left;
+		}
+		.right{
+			height: 30px;
+			width: 33.33%;
+			margin-bottom: -100px;
+			padding-bottom: 100px;
+			background-color: blue;
+			float:left;
+		}	</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">height:50px</div>
+			<div class="main">height:100px</div>
+			<div class="right">height:30px</div>
+		</div>
+		<h4>margin-b 负值 与pading-b 正值抵消 使得box模型在文档流中的位置保持不变，相对于父元素height也就不变 配合overflow 以这个高度进行裁切 看起来就有三个等高的div </h4>
+	</body>
+	</html>
