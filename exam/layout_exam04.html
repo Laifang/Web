@@ -15,14 +15,19 @@
 			color: #fff;
 		}
 		.demo01_main{
-			margin: 0 25% -18px 0;
+			margin: 0 25% 0 0;
 			background: #f00;
-			/*float: left;*/
+		}
+		.demo01_main_wrap{
+			width: 100%;
+			position: relative;
+			float: left;
 		}
 		.demo01_right{
 			width: 25%;
 			background: #0f0;
 			float: right;
+			margin-left: -100%;
 		}
 
 		.demo02_wrap{
@@ -83,7 +88,9 @@
 <body>
 	<h4>float margin 实现固定+自适应两列布局</h4>
 	<div class="demo01_wrap">
-		<div class="demo01_main">main:auto</div>
+		<div class="demo01_main_wrap">
+			<div class="demo01_main">main:auto</div>
+		</div>
 		<div class="demo01_right">right:25%</div>
 	</div>
 	<br>
