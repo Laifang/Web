@@ -9,7 +9,7 @@ body{
 .header{
 	height:70px;
 	width: 100%;
-	/*min-width: 768px;*/
+	min-width: 700px;
 	background: #333;
 	display: table;
 	vertical-align: middle; /*实现垂直居中*/
@@ -44,7 +44,8 @@ article,aside{
 	margin: 40px;
 	padding: 20px;
 	background:#fff;
-	/*min-width: 768px;*/
+	box-shadow: 2px 2px 2px #848484;
+	min-width: 300px;
 }
 
 article h3{
