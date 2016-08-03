@@ -9,13 +9,10 @@ body{
 .header{
 	height:70px;
 	width: 100%;
-	min-width: 768px;
+	/*min-width: 768px;*/
 	background: #333;
 	display: table;
 	vertical-align: middle; /*实现垂直居中*/
-	/*position: fixed;
-	top:0;
-	left: 0;*/
 }
 .header span{
 	display: table-cell;
@@ -32,6 +29,7 @@ body{
 }
 .nav ul a{
 	color: #fff;
+	text-decoration: none;
 }
 .nav ul a:hover{
 	color:#999;
@@ -46,6 +44,7 @@ article,aside{
 	margin: 40px;
 	padding: 20px;
 	background:#fff;
+	/*min-width: 768px;*/
 }
 
 article h3{
@@ -85,7 +84,7 @@ ol.sort{
 article table.count{
 	width: 100%;
 	border-collapse: collapse;
-	border-color: #ccc;
+	border-color: #555;
 
 }
 article table.count td{
