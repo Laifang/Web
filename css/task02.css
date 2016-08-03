@@ -112,6 +112,7 @@ label.input-label{
 	display: inline-block;
 	width: 30%;
 	text-align: right;
+	margin-right: 15px
 }
 
 div.input-form input{
@@ -120,10 +121,9 @@ div.input-form input{
 
 label.input-msg{
 	display: block;
-	margin-left: 31%;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-left: 30%;
 	color: #aaa;
+	padding-left: 18px;
 }
 div.input-form textarea{
 	width: 50%;
