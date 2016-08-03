@@ -4,6 +4,7 @@ body{
 	margin: 0px;
 	border: 0px;
 	background: #DEDEDE;
+	min-width: 768px;
 }
 
 .header{
@@ -13,9 +14,7 @@ body{
 	background: #333;
 	display: table;
 	vertical-align: middle; /*实现垂直居中*/
-	position: fixed;
-	top:0;
-	left: 0;
+
 }
 .header span{
 	display: table-cell;
@@ -85,7 +84,7 @@ ol.sort{
 article table.count{
 	width: 100%;
 	border-collapse: collapse;
-	border-color: #ccc;
+	border-color: #555;
 
 }
 article table.count td{
@@ -116,4 +115,18 @@ footer a{
 	color:#fff;
 	cursor: auto;
 
+}
+.aside-form-wrap{
+	width: 30%;
+	text-align:right;
+}
+.aside-form{
+	margin-bottom: 10px;
+}
+.aside-form label{
+	display: block;
+}
+p.label{
+	color:#999;
+	padding-left: 9em;
 }
