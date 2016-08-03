@@ -136,6 +136,7 @@ aside form button{
 	background: #3355d0;
 	color: #fff;
 	text-align: center;
+	border: 1px solid #3355d0;
 	border-radius: 10px;
 	font-weight: bold;
 	height: 40px;
