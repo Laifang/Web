@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>task 02</title>
-	<link rel="stylesheet" href="../css/task02.css">
+	<title>task 05</title>
+	<link rel="stylesheet" href="../css/task05.css">
 </head>
 <body>
 	<header class="header">
@@ -17,6 +17,59 @@
 			</ul>
 		</nav>
 	</header>
+	<aside>
+		<h2 class="title">侧栏的标题</h2>
+		<!-- <h3>侧栏注册窗口标题</h3> -->
+		<form action="" medho="post">
+			<div class="input-form">
+				<label for="email" class="input-label">请输入邮箱地址</label>
+				<input type="text" name="email" id="email" placeholder="在这里输入你的邮箱地址" minlength="8" >
+			</div>
+			<label class="input-msg">邮箱地址请按要求格式输入</label>
+
+			<div class="input-form">
+				<label for="pwd1" class="input-label">请输入密码</label>
+				<input type="password" name="pwd1" id="pwd1" placeholder="在这里输入你的密码">
+			</div>
+			<div class="input-form">
+				<label for="pwd2" class="input-label">请再次确认密码</label>
+				<input type="password" name="pwd1" id="pwd2" placeholder="在这里确认你的密码">
+			</div>
+			<label class="input-msg">密码请为6-16位英文数字</label>
+
+			<div class="input-form">
+				<label class="input-label">性别</label>
+				<input type="radio" name="sex" value="male"  checked >男
+				<input type="radio" name="sex" value="female" >女
+			</div>
+
+			<div class="input-form">
+				<label for="city" class="input-label">城市</label>
+				<select name="city" id="city">
+					<option value="北京">北京</option>
+					<option value="上海">上海</option>
+					<option value="广州">广州</option>
+				</select>
+			</div>
+
+			<div class="input-form">
+				<label class="input-label">爱好</label>
+				<input type="checkbox" name="hobby" value="sports">运动
+				<input type="checkbox" name="hobby" value="artist">艺术
+				<input type="checkbox" name="hobby" value="since">科学
+			</div>
+
+			<div class="input-form">
+				<label for="describe" class="input-label">
+					个人描述
+				</label>
+				<textarea name="describe" id="describe" cols="10" rows="20">这是一个多行输入框，输入您的个人描述</textarea>
+			</div>
+
+			<button type="submit">确认提交</button>
+		</form>
+	</aside>
+
 	<article class="article">
 		<h2>文章一级标题</h2>
 		<h3>文章二级标题</h3>
@@ -52,6 +105,12 @@
 					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>
 					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>
 					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>
+					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>
+					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>
+					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>	
+					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>	
+					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>	
+					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>	
 					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>
 					<li>好看的图片<br><img src="../image/pic.jpg" alt="" width="100"></li>
 				</ul>
@@ -109,58 +168,7 @@
 				</table>
 			</article>
 
-			<aside>
-				<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-				<h3>侧栏注册窗口标题</h3>
-				<form action="" medho="post">
-					<div class="input-form">
-						<label for="email" class="input-label">请输入电子邮箱地址</label>
-						<input type="text" name="email" id="email" placeholder="在这里输入你的邮箱地址" minlength="8" >
-					</div>
-					<label class="input-msg">邮箱地址请按要求格式输入</label>
-
-					<div class="input-form">
-						<label for="pwd1" class="input-label">请输入密码</label>
-						<input type="password" name="pwd1" id="pwd1" placeholder="在这里输入你的密码">
-					</div>
-					<div class="input-form">
-						<label for="pwd2" class="input-label">请再次确认密码</label>
-						<input type="password" name="pwd1" id="pwd2" placeholder="在这里确认你的密码">
-					</div>
-					<label class="input-msg">密码请为6-16位英文数字</label>
-
-					<div class="input-form">
-						<label class="input-label">性别</label>
-						<input type="radio" name="sex" value="male"  checked >男
-						<input type="radio" name="sex" value="female" >女
-					</div>
-
-					<div class="input-form">
-						<label for="city" class="input-label">城市</label>
-						<select name="city" id="city">
-							<option value="北京">北京</option>
-							<option value="上海">上海</option>
-							<option value="广州">广州</option>
-						</select>
-					</div>
-
-					<div class="input-form">
-						<label class="input-label">爱好</label>
-						<input type="checkbox" name="hobby" value="sports">运动
-						<input type="checkbox" name="hobby" value="artist">艺术
-						<input type="checkbox" name="hobby" value="since">科学
-					</div>
-
-					<div class="input-form">
-						<label for="describe" class="input-label">
-							个人描述
-						</label>
-						<textarea name="describe" id="describe" cols="10" rows="20">这是一个多行输入框，输入您的个人描述</textarea>
-					</div>
-
-					<button type="submit">确认提交</button>
-				</form>
-			</aside>
+			
 
 			<footer><span>版权所有&copy; <a href="mailto:lfs451@gmail.com">DesireSummer</a></span></footer>
 		</body>

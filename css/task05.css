@@ -1,15 +1,19 @@
 body{
-	font-family: "YaHei";
+	font-family: "Consolas";
 	font-size: 14px;
 	margin: 0px;
 	border: 0px;
 	background: #DEDEDE;
+	min-width: 768px;
 }
-
+.clearfix:after{
+	content: "这是什么";
+	clear: both;
+}
 .header{
 	height:70px;
 	width: 100%;
-	min-width: 768px;
+	/*min-width: 768px;*/
 	background: #333;
 	display: table;
 	vertical-align: middle; /*实现垂直居中*/
@@ -46,6 +50,15 @@ article,aside{
 	margin: 40px;
 	padding: 20px;
 	background:#fff;
+	box-shadow: 2px 2px 2px #848484;
+}
+article{
+	/*min-width: 300px;*/
+	margin-right: 470px;
+}
+aside{
+	float: right;
+	width: 350px;
 }
 
 article h3{
@@ -70,9 +83,10 @@ article ul.pic-list{
 	list-style-type: none;
 }
 article ul.pic-list li{
-	
+	/*float: left;*/
 	border: 1px solid #ccc;
 	text-align: center;
+	display: inline-block;
 	padding: 10px;
 	width: 100px;
 	margin: 10px;
@@ -105,6 +119,7 @@ article table.count tfoot{
 }
 
 
+
 div.input-form{
 	margin: 10px 0;
 }
@@ -118,8 +133,10 @@ div.input-form input[type=text],input[type=password]{
 	/*vertical-align: bottom;*/
 	/*border:none;*/
 	/*outline: none;*/
+	padding-left: 5px;
 	font-size: 14px;
 	width: 200px;
+
 }
 
 label.input-msg{
@@ -136,7 +153,10 @@ div.input-form textarea{
 	height: 100px;
 	vertical-align: top;
 }
-
+aside .title{
+	padding-left: 30px;
+	border-left:3px solid #ccc;
+}
 aside form button{
 	width: 100%;
 	background: #3355d0;
