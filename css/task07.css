@@ -1,0 +1,230 @@
+*{
+	font-family: "MicroSoft Yahei";
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #eee;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+	color: #000;
+	text-decoration: none;
+}
+.main{
+	width: 1280px;
+	margin: 0 auto;
+}
+/*header 部分*/
+header{
+	
+	width: 1280px;
+	height: 56px;
+	background: #fff;
+}
+
+.logo{
+	float: left;
+	margin-left: 60px;
+	margin-top: 13px;
+}
+
+.logo img{
+	height: 30px;
+	width: 30px;
+	/*margin-bottom: -30px;*/
+}
+
+.logo p{
+	float: right;
+	/*line-height: 21px;*/
+	margin-left: 10px;
+	font-size: 21px;
+	color: #393a3a;
+}
+nav{
+	float: right;
+	margin-right: 68px;
+}
+
+.nav{
+	float: left;
+	margin-top: 18px;
+	list-style: none;
+}
+
+.nav-item {
+	float: left;
+	margin-right: 20px;
+	width: 64px;
+	height: 34px;
+	text-align: center;
+	
+}
+.nav-item a{
+	font-size: 14px;
+	color: #787b83;
+}
+.nav-item:hover{
+	border-bottom: 4px #e74f4d solid;
+}
+
+.nav-item:hover a{
+	color: #e74f4d;
+}
+
+
+.nav-item:last-of-type{
+	margin-right: 0;
+}
+
+.login{
+	float: right;
+	margin-top: 18px;
+	margin-left: 30px;
+
+}
+
+.login img{
+	float: left;
+}
+.login span{ 
+	float: right;
+	margin-left: 5px;
+	/*padding-bottom: 2px;*/
+	color: #e74f4d;
+	font-size: 14px;
+}
+
+/*cover 部分*/
+
+.cover{
+	position: relative;
+	width: 1280px;
+	height: 680px;
+	background: url(../image/task07-cover.jpg);/*!!!使用background-image 的元素作为父元素的存在弊端*/
+}
+
+.cover-alpha{
+	position: absolute;
+	background-color: rgba(4,0,0,0.2);
+	width: 100%;
+	height: 100%;
+	
+}
+
+.cover-title{
+	padding-top: 228px;
+	margin-left: 116px;
+	font-size: 60px;
+	color: #fff;
+}
+.cover-content{
+
+}
+/*map 部分*/
+
+
+.map{
+	position: relative;
+	background-image: url(../image/map.jpg) ;
+	width: 1280px;
+	height: 340px;
+}
+.bg-alpha{
+	position: absolute;
+		/*question: 为什么把这个bg放在后面会挡住前面的元素,
+		很简单啊 文档流 从前往后排列，后面的会把前面的遮挡住*/
+	background-color: rgba(170,52,50,0.2);
+	width: 100%;
+	height:100%;
+}
+
+.inp-wrap{
+
+	margin-left: 125px;
+	padding-left: 30px;
+	padding-top: 172px;
+	/*width: 240px;*/
+	/*height: 100%;*/
+}
+.inp-country{
+	z-index:9;
+	float:left;
+	width: 236px;
+	height: 36px;
+	border: 2px solid #be4e48;
+	text-indent: 10px;
+	color: #b4b5b5;
+}
+
+.inp-image{
+	position: absolute;
+	top: 11px;
+	right: 8px;
+	width: 18px;
+	height: 18px
+
+}
+
+.inp-list{
+	position: relative;
+	float: left;
+	margin-right: 28px;
+}
+
+.item-list{
+	/*visibility: hidden;*/
+	display: none;
+	/*margin-left: 30px;*/
+	border: 2px solid #be4e48;
+	border-top: none;
+	width: 236px;
+	background-color: #e3e2e4;
+	list-style: none;
+}
+
+.inp-list:hover .item-list {
+	/*visibility: visible;*/
+	display: block;
+}
+
+.inp-item{
+	display: inline-block;
+	line-height: 27px;
+	width: 236px;
+	height: 27px;
+	color: #323333;
+	/*text-indent: 32px;*/
+	text-decoration: none;
+}
+
+.hook{
+	padding: 0 11px 0 8px; 
+	visibility: hidden;
+}
+
+a.inp-item:hover{
+	background: #bf4f49;
+	color: #fff;
+
+}
+
+a.inp-item:hover .hook{
+	display: inline;
+	visibility: visible;
+}
+
+.btn-search{
+	width: 236px;
+	height: 36px;
+	border: 2px solid #be4e48;;
+	background-color: #be4e48;
+	color: #fff;
+	letter-spacing: 10px;
+	cursor: auto;
+}
