@@ -115,13 +115,11 @@ nav{
 	position: relative;
 	width: 1280px;
 	height: 680px;
-	background: url(../image/task07-cover.jpg);/*!!!使用background-image 的元素作为父元素的存在弊端*/
+	background: url(../image/task07-cover.jpg);/*问题  子元素嵌套存 影响父元素布局的问题 √已解决*/
 }
 
 .cover-alpha{
 	position: absolute;
-	/*top: 0;
-	left: 0;*/
 	background-color: rgba(4,0,0,0.2);
 	width: 100%;
 	height: 100%;
@@ -129,7 +127,7 @@ nav{
 }
 
 .cover-title{
-	padding-top: 228px;/*margin-top 失效*/
+	padding-top: 228px;/*margin-top 共享问题 √已解决*/
 	padding-bottom: 30px;
 	margin-left: 116px;
 	font-size: 60px;
@@ -221,8 +219,8 @@ a.btn-feel{
 }
 .bg-alpha{
 	position: absolute;
-		/*question: 为什么把这个bg放在后面会挡住前面的元素,
-		很简单啊 文档流 从前往后排列，后面的会把前面的遮挡住*/
+		/*问题: 为什么把这个bg放在后面会挡住前面的元素,
+		很简单啊 文档流 从前往后排列，后面的会把前面的遮挡住 √已解决*/
 	background-color: rgba(170,52,50,0.2);
 	width: 100%;
 	height:100%;
