@@ -5,7 +5,7 @@
 	padding: 0;
 }
 body{
-	background-color: #eee;
+	background-color: #aaa;
 }
 
 a:link,
@@ -21,7 +21,6 @@ a:active{
 }
 /*header 部分*/
 header{
-	
 	width: 1280px;
 	height: 56px;
 	background: #fff;
@@ -34,6 +33,7 @@ header{
 }
 
 .logo img{
+	float: left;
 	height: 30px;
 	width: 30px;
 	/*margin-bottom: -30px;*/
@@ -69,6 +69,15 @@ nav{
 	font-size: 14px;
 	color: #787b83;
 }
+
+.nav-item:first-of-type{
+	border-bottom: 4px #e74f4d solid;
+}
+
+.nav-item:first-of-type a{
+	color: #e74f4d;
+}
+
 .nav-item:hover{
 	border-bottom: 4px #e74f4d solid;
 }
@@ -111,6 +120,8 @@ nav{
 
 .cover-alpha{
 	position: absolute;
+	/*top: 0;
+	left: 0;*/
 	background-color: rgba(4,0,0,0.2);
 	width: 100%;
 	height: 100%;
@@ -118,17 +129,90 @@ nav{
 }
 
 .cover-title{
-	padding-top: 228px;
+	padding-top: 228px;/*margin-top 失效*/
+	padding-bottom: 30px;
 	margin-left: 116px;
 	font-size: 60px;
 	color: #fff;
 }
 .cover-content{
+	margin-left: 116px;
+	font-size: 21px;
+	color: #fff;
 
 }
+a.btn-feel{
+	display: inline-block;
+	margin-left: 116px;
+	margin-top: 68px;
+	padding-top: 16px;
+	width: 330px;
+	height: 65px;
+	background: #e74f4d;
+	/*vertical-align: middle;*/
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+
+/*feature 部分 */
+.feature{
+	position: relative;
+	width: 1280px;
+	height: 250px;
+	background: #fff;
+}
+
+.f-list{
+	list-style: none;
+}
+
+.f-item{
+	float: left;
+	margin-left: 84px;
+}
+
+.f-ico{
+	display: block;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	margin-left: 60px;
+}
+
+.f-item p{
+	height: 50px;
+	border-right: 2px solid #767777;
+	padding-right: 80px;
+	font-size: 14px;
+	color: #767777;
+	text-align: center;
+}
+.f-item:last-of-type p{
+	border-right:none;
+}
+
+
+/*about-new 部分*/
+.about-new{
+	width: 100%;
+	height: 360px;
+	background: #ededed;
+}
+
+.about-new img{
+	display: block;
+	padding-top: 90px;
+	margin-left: 595px;
+}
+
+.about-new p{
+	margin-top: 50px;
+	margin-left: 218px;
+	color: #323333;
+	font-size: 53.5px;
+}
+
 /*map 部分*/
-
-
 .map{
 	position: relative;
 	background-image: url(../image/map.jpg) ;
@@ -226,5 +310,59 @@ a.inp-item:hover .hook{
 	background-color: #be4e48;
 	color: #fff;
 	letter-spacing: 10px;
-	cursor: auto;
+	/*cursor: auto;*/
+}
+
+
+/*activity 部分*/
+
+.activity{
+	width: 100%;
+	height: 605px;
+	background: #f7f7f7;
+}
+.photo-wrap{
+	margin-left: 150px;
+	padding-top: 100px;
+}
+.photo{
+	float: left;
+	margin-right: 38px;
+}
+
+.photo img{
+	display: block;
+	width: 200px;
+	height: 305px;
+	padding: 8px;
+	border: 2px solid #dadada;
+	background: #fff;
+}
+
+.photo p{
+	text-align: center;
+}
+
+.photo-title{
+	margin-top: 12px;
+	font-size: 15px;
+	color: #323233;
+}
+
+.photo-content{
+	margin-top: 12px;
+	font-size: 12px;
+	color: #909090;
+}
+
+.sh-title{
+	/*问题 !!!如何实现两端对齐*/
+	font-size: 20px;
+	color: #323333;
+}
+
+.sh-content{
+	margin: 8px 0;
+	font-size: 12px;
+	color: #909090;
 }
