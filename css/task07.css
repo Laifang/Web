@@ -1,11 +1,15 @@
 *{
-	font-family: "MicroSoft Yahei";
+	font-family: "Microsoft Yahei";
 	font-size: 12px;
 	margin: 0;
 	padding: 0;
 }
 body{
 	background-color: #aaa;
+}
+
+.clearfix{
+	clear: both;
 }
 
 a:link,
@@ -143,7 +147,7 @@ a.btn-feel{
 	display: inline-block;
 	margin-left: 116px;
 	margin-top: 68px;
-	padding-top: 16px;
+	line-height: 65px;
 	width: 330px;
 	height: 65px;
 	background: #e74f4d;
@@ -337,7 +341,8 @@ a.inp-item:hover .hook{
 	background: #fff;
 }
 
-.photo p{
+.photo p,
+.photo h4{
 	text-align: center;
 }
 
@@ -363,4 +368,304 @@ a.inp-item:hover .hook{
 	margin: 8px 0;
 	font-size: 12px;
 	color: #909090;
+}
+
+
+/*section 6 部分*/
+.section-6{
+	width: 100%;
+	height: 565px;
+	/*background: #ccc;*/
+}
+
+
+.sec-6-left{
+	float: left;
+	height: 100%;
+	width: 850px;
+	background-image: url(../image/task07-photo-05.jpg);
+	text-align: center;
+}
+
+.sec-6-l-title{
+	margin-top: 130px;
+	font-size: 50px;
+	/*line-height: 50px;*/
+	color:#fff;
+}
+.sec-6-l-time{
+	margin-top: 10px;
+	font-size: 160px;
+	line-height: 160px;
+	color:#fff;
+}
+.sec-6-l-new{
+	/*margin-top: 10px;*/
+	font-size: 22px;
+	line-height: 43px;
+	color:#fff;
+}
+.sec-6-right{
+	float: right;
+	height: 100%;
+	width: 430px;
+	background: #fff;
+	text-align: center;
+}
+
+.sec-6-r-title{
+	margin-top: 165px;
+	font-size: 20px;
+	color:#323333;
+}
+.sec-6-r-mark{
+	font-size: inherit;
+	color: #e7504d;
+}
+
+.sec-6-r-content{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 286px;
+	font-size: 12px;
+	color:#aaa;
+	line-height: 20px;
+}
+
+a.btn-more{
+	display: inline-block;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 102px;
+	height: 30px;
+	border: 2px #e5676a solid;
+	color: #e5676a;
+	line-height: 30px;
+	text-align: center;
+}
+
+.sec-6-r-nav{
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.sec-6-r-item{
+	display: inline-block;
+	margin:0 10px;
+}
+
+.sec-6-r-item:first-of-type a{
+	background-position: right -14px bottom 0px; 
+}
+
+.sec-6-r-item a{
+	display: inline-block;
+	width: 16px;
+	height: 12px;
+	background:url(../image/task07-nav-ico.png) no-repeat right bottom 0px;
+}
+
+.sec-6-r-item a:hover{
+	background-position: right -14px bottom 0px; 
+}
+
+/*section 7 部分*/
+
+.section-7{
+	width: 100%;
+	height: 520px;
+}
+
+.sec-7-1,
+.sec-7-2{
+	float: left;
+	width: 425px;
+	height: 100%;
+	text-align: center;
+}
+
+.sec-7-1{
+	background: #e7504d;
+}
+
+.sec-7-2{
+	background: #fff;
+}
+
+.sec-7-title-1,
+.sec-7-title-2{
+	margin-top: 175px;
+	font-size: 21px;
+	color: #e7504d;
+	line-height: 30px;
+}
+
+.sec-7-title-1{
+	color: #fff;
+}
+
+.sec-7-line-1,
+.sec-7-line-2{
+	height: 3px;
+	width: 30px;
+	margin: 25px auto;
+	border: none;
+	background: #fff;
+}
+
+.sec-7-line-2{
+	background:#e7504d;
+}
+
+a.sec-btn-1,
+a.sec-btn-2{
+	display: inline-block;
+	margin: 0 auto;
+	border: 2px solid #fff;
+	width: 166px;
+	height: 38px;
+	font-size: 21px;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+}
+
+a.sec-btn-2{
+	border-color: #e7504d;
+	color:#e7504d;
+}
+
+.sec-7-right{
+	float: right;
+	width: 430px;
+	height: 100%;
+	background: url(../image/task07-photo-06.jpg) no-repeat;
+}
+
+/*section-8*/
+
+.section-8{
+	position: relative;
+	width: 100%;
+	height: 750px;
+	background: #fff;
+	text-align: center;
+}
+
+.sec-8-title{
+	padding-top: 120px;
+	font-size: 21px;
+	color: #323333;
+	
+}
+
+.sec-8-content{
+	font-size: 12px;
+	line-height: 18px;
+	color: #aaa;
+}
+
+.sec-8-line{
+	margin: 15px auto;
+	width: 30px;
+	height: 2px;
+	border: none;
+	background: #e7504d;
+
+}
+
+.sec-8-left{
+	float: left;
+	margin-left: 140px;
+	margin-top: 100px;
+	width: 290px;
+	text-align: left;
+
+}
+.sec-8-volunteer{
+	margin-bottom: 34px;
+}
+
+.sec-8-volunteer h4{
+	margin-bottom: 28px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #231815;
+}
+
+.sec-8-volunteer p{
+	
+	font-size: 12px;
+	color: #231815;
+	line-height: 21px;
+}
+
+.sec-8-vol-more{
+
+	/*display: block;*/
+	float: right;
+	height: 18px;
+	font-size: 12px;
+}
+.sec-8-vol-more span{
+	padding-left: 8px;
+}
+
+.sec-8-right{
+	float: left;
+	margin-top: 100px;
+	margin-left: 80px;
+	width: 664px;
+}
+
+.sec-8-right input[type=text]{
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 15px;
+	width: 310px;
+	height: 40px;
+	border: none;
+	color: #a9a9a9;
+	font-size: 12px;
+	text-indent: 16px;
+	background: #ededee;
+}
+
+.sec-8-right input[type=text]:focus{
+		outline: 2px #ccc solid;
+}
+
+.sec-8-right textarea{
+	float: left;
+	margin-bottom: 15px;
+	width: 644px;
+	height: 120px;
+	padding-top: 10px;
+	border: none;
+	color: #a9a9a9;
+	font-size: 12px;
+	text-indent: 16px;
+	background: #ededee;
+	resize: none;
+}
+
+.sec-8-right textarea:focus{
+	outline: 2px #ccc solid;
+}
+
+.sec-8-right button[type=submmit]{
+	float: left;
+	width: 644px;
+	height: 40px;
+	border: none;
+	color: #a9a9a9;
+	font-size: 12px;
+	text-indent: 16px;
+	background: #ededee;
+	cursor: pointer;
+}
+.sec-8-right button[type=submmit]:hover{
+	outline: 2px #ccc solid;
+	color: #fff;
+	background: #aaa;
 }
