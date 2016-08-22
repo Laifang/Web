@@ -23,7 +23,7 @@ a:active{
 	width: 1280px;
 	margin: 0 auto;
 }
-/*header éƒ¨åˆ†*/
+/*header ²¿·Ö*/
 header{
 	width: 1280px;
 	height: 56px;
@@ -113,13 +113,13 @@ nav{
 	font-size: 14px;
 }
 
-/*cover éƒ¨åˆ†*/
+/*cover ²¿·Ö*/
 
 .cover{
 	position: relative;
 	width: 1280px;
 	height: 680px;
-	background: url(../image/task07-cover.jpg);/*é—®é¢˜  å­å…ƒç´ åµŒå¥—å­˜ å½±å“çˆ¶å…ƒç´ å¸ƒå±€çš„é—®é¢˜ âˆšå·²è§£å†³*/
+	background: url(../image/task07-cover.jpg);/*ÎÊÌâ  ×ÓÔªËØÇ¶Ì×´æ Ó°Ïì¸¸ÔªËØ²¼¾ÖµÄÎÊÌâ ¡ÌÒÑ½â¾ö*/
 }
 
 .cover-alpha{
@@ -131,7 +131,7 @@ nav{
 }
 
 .cover-title{
-	padding-top: 228px;/*margin-top å…±äº«é—®é¢˜ âˆšå·²è§£å†³*/
+	padding-top: 228px;/*margin-top ¹²ÏíÎÊÌâ ¡ÌÒÑ½â¾ö*/
 	padding-bottom: 30px;
 	margin-left: 116px;
 	font-size: 60px;
@@ -157,7 +157,7 @@ a.btn-feel{
 	font-size: 30px;
 }
 
-/*feature éƒ¨åˆ† */
+/*feature ²¿·Ö */
 .feature{
 	position: relative;
 	width: 1280px;
@@ -194,7 +194,7 @@ a.btn-feel{
 }
 
 
-/*about-new éƒ¨åˆ†*/
+/*about-new ²¿·Ö*/
 .about-new{
 	width: 100%;
 	height: 360px;
@@ -214,7 +214,7 @@ a.btn-feel{
 	font-size: 53.5px;
 }
 
-/*map éƒ¨åˆ†*/
+/*map ²¿·Ö*/
 .map{
 	position: relative;
 	background-image: url(../image/map.jpg) ;
@@ -223,8 +223,8 @@ a.btn-feel{
 }
 .bg-alpha{
 	position: absolute;
-		/*é—®é¢˜: ä¸ºä»€ä¹ˆæŠŠè¿™ä¸ªbgæ”¾åœ¨åé¢ä¼šæŒ¡ä½å‰é¢çš„å…ƒç´ ,
-		å¾ˆç®€å•å•Š æ–‡æ¡£æµ ä»å‰å¾€åæ’åˆ—ï¼Œåé¢çš„ä¼šæŠŠå‰é¢çš„é®æŒ¡ä½ âˆšå·²è§£å†³*/
+		/*ÎÊÌâ: ÎªÊ²Ã´°ÑÕâ¸öbg·ÅÔÚºóÃæ»áµ²×¡Ç°ÃæµÄÔªËØ,
+		ºÜ¼òµ¥°¡ ÎÄµµÁ÷ ´ÓÇ°ÍùºóÅÅÁĞ£¬ºóÃæµÄ»á°ÑÇ°ÃæµÄÕÚµ²×¡ ¡ÌÒÑ½â¾ö*/
 	background-color: rgba(170,52,50,0.2);
 	width: 100%;
 	height:100%;
@@ -316,7 +316,7 @@ a.inp-item:hover .hook{
 }
 
 
-/*activity éƒ¨åˆ†*/
+/*activity ²¿·Ö*/
 
 .activity{
 	width: 100%;
@@ -359,7 +359,7 @@ a.inp-item:hover .hook{
 }
 
 .sh-title{
-	/*é—®é¢˜ !!!å¦‚ä½•å®ç°ä¸¤ç«¯å¯¹é½*/
+	/*ÎÊÌâ !!!ÈçºÎÊµÏÖÁ½¶Ë¶ÔÆë*/
 	font-size: 20px;
 	color: #323333;
 }
@@ -371,7 +371,7 @@ a.inp-item:hover .hook{
 }
 
 
-/*section 6 éƒ¨åˆ†*/
+/*section 6 ²¿·Ö*/
 .section-6{
 	width: 100%;
 	height: 565px;
@@ -469,7 +469,7 @@ a.btn-more{
 	background-position: right -14px bottom 0px; 
 }
 
-/*section 7 éƒ¨åˆ†*/
+/*section 7 ²¿·Ö*/
 
 .section-7{
 	width: 100%;
@@ -668,4 +668,118 @@ a.sec-btn-2{
 	outline: 2px #ccc solid;
 	color: #fff;
 	background: #aaa;
+}
+
+/*section-9*/
+
+.section-9{
+	width: 100%;
+	height: 360px;
+	background-color: #32353e;
+	text-align: center;
+}
+
+.contract h4{
+	padding-top: 90px;
+	margin-bottom: 12px;
+	font-size: 21px;
+	color: #fff;
+	/*line-height: 48px;*/
+
+}
+
+.contract p{
+	font-size: 12px;
+	color: #fff;
+}
+
+.sec-9-inp{
+	/*margin:0 auto;*/
+	margin-top: 30px;
+}
+
+.sec-9-email{
+	/*float: left;*/
+	/*display: inline-block;*/
+	vertical-align: middle;
+	width: 430px;
+	height: 40px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	color: #aaa;
+	text-indent: 1em;
+}
+
+.sec-9-email:focus{
+	outline: 2px #ccc solid;
+}
+
+.sec-9-submit{
+	/*float: left;*/
+	/*display: inline-block;*/
+	vertical-align: middle;
+	margin-left: -3px;
+	/*margin-top: -2px;*/
+	width: 80px;
+	height: 40px;
+	border: none;
+	outline: none;
+	background-color:#6f7278;
+	cursor: pointer; 
+}
+
+.ico-list{
+	margin-top: 38px;
+	list-style: none;	
+
+}
+
+.ico-item{
+	display: inline-block;
+}
+.ico-item a{
+	display: inline-block;
+	margin-right: 28px;
+	width: 26px;
+	height: 26px;
+	background-image: url(../image/task07-ico-list.gif) ;
+	background-repeat: no-repeat;
+
+}
+
+/*.ico-item:nth-of-type(1) a{
+	background-position: left 0;
+}*/
+.ico-item:nth-of-type(2) a{
+	background-position: -27px;
+}
+.ico-item:nth-of-type(3) a{
+	background-position: -57px;
+}
+.ico-item:nth-of-type(4) a{
+	background-position: -84px;
+}
+
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: #2f3039;
+	
+}
+
+a.new-wolrd{
+	float: left;
+	margin-left: 100px;
+	margin-top: 30px;
+	font-size: 12px;
+	color: #fff;
+}
+
+a.back-top{
+	float: right;
+	margin-right: 40px;
+	margin-top:34px;
+	font-size: 12px;
+	color: #fff;
 }
