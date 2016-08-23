@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>背景图像位置探秘</title>
+	<style>
+		.wrap{
+			margin:  50px  auto;
+			/*background-color: #ddd;*/
+			width: 200px;
+			height: 200px;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			border:1px solid #aaa;
+			/*border-radius: 50%;*/
+			background: url(../image/inp-image.jpg) no-repeat;
+		}
+		#box1{
+			background-position: 50px; 
+		}
+		#box2{
+			background-position: 50%; 
+		}
+		#box3{
+			background-position: right top; 
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrap">
+		<p>backgroud-position:50px ,左上角位于中心</p>
+		<div id="box1" class="box">
+		</div>
+	</div>
+	<div class="wrap">
+		<p>backgroud-position:50% ，对应点（中心点）位于中心</p>
+		<div id="box2" class="box">
+		</div>
+	</div>
+	<div class="wrap">
+		<p>backgroud-position:right top，图片位于右上角</p>
+		<div id="box3" class="box">
+		</div>
+	</div>
+	<p>
+		图像的定位并不会收到padding的影响
+		<ul>
+			<li>使用像素单位，定位点 是图片的坐上角与父元素的左上角</li>
+			<li>使用百分比 定位点 是图片的一个对应点（可能是中心点） 与父元素的左上角</li>
+			<li>如果只提供一个，该值将用于横坐标；纵坐标将默认为50%（即center）</li>
+			<li>如果提供两个，第一个用于横坐标，第二个用于纵坐标</li>
+		</ul>
+	</p>
+</body>
+</html>
